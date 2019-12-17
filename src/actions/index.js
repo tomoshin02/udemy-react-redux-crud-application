@@ -1,9 +1,9 @@
 //action JSオブジェクト
 //typeの値はユニークである必要がある。
-const INCREMENT = 'INCREMENT'
-const DECREMENT = 'DECREMENT'
+export const INCREMENT = 'INCREMENT'
+export const DECREMENT = 'DECREMENT'
 
-export const increment = =() => ({
+export const increment = () => ({
   type:'INCREMENT'
 })
 
