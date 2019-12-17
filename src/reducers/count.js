@@ -2,7 +2,7 @@ import { INCREMENT, DECREMENT} from '../actions'
 
 const initialState = {value: 0}
 
-export defalt (state = initialState, action) => {
+export default (state = initialState, action) => {
   switch (action.type){
     case INCREMENT:
       return { state.value + 1 }
@@ -10,5 +10,5 @@ export defalt (state = initialState, action) => {
       return { state.value - 1}
     default:
       return state
+    }
   }
-}
