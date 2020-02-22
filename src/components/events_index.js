@@ -18,7 +18,7 @@ import { readEvents } from '../actions'
 class EventsIndex extends Component {
   componentDidMount(){
     this.props.readEvents()
-  }
+  }h
 
   renderEvents(){
     return _.map(this.props.events, event => (
@@ -61,8 +61,6 @@ class EventsIndex extends Component {
          {this.renderEvents()}
         </TableBody>
       </Table>
-
-      <Link to="/events/new">New Event</Link>
     </React.Fragment>
     )
   }
